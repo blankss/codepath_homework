@@ -12,7 +12,7 @@ Time spent: 13 hours spent in total
     Tested in version: 4.2
     Fixed in version: 
   - GIF Walkthrough:
-    <img src="xssVulnOne" alt="Reflected XSS">
+    <img src="xssVulnOne.gif" alt="Reflected XSS">
   - Steps to recreate:
     1. Once we download or screenshot an image onto our local machine, we then upload it onto the older veresion of WordPress. 
     2. Afterwards, we type in the XSS scipt into the description box of the image.
@@ -28,7 +28,7 @@ Time spent: 13 hours spent in total
     Tested in version: 4.2
     Fixed in version:
   - GIF Walkthrough:
-    <img src="xssVulnTwo" alt="Stored XSS">
+    <img src="xssVulnTwo.gif" alt="Stored XSS">
   - Steps to recreate:
     1. On a WordPress post, post a comment that links with the XSS script.
     2. Make sure to mask the script by naming it to CLICK ME or another string.
@@ -44,7 +44,7 @@ Time spent: 13 hours spent in total
     Tested in version: 4.2
     Fixed in version: 4.2.1
   - GIF Walkthrough:
-    <img src="xssVulnThree" alt="Stored XSS">
+    <img src="xssVulnThree.gif" alt="Stored XSS">
   - Steps to recreate:
     1. Since we are making an extremely long string to input, we should run a python script to do the work for us.
     2. The code:
