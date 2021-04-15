@@ -10,7 +10,7 @@ Time spent: 13 hours spent in total
   - Summary:
     The XSS script activates when the viewer loads and views the image on the WordPress page.
     Tested in version: 4.2
-    Fixed in version: 
+    Fixed in version: 4.5.3
   - GIF Walkthrough:
     <img src="xssVulnOne.gif" alt="Reflected XSS">
   - Steps to recreate:
@@ -21,12 +21,12 @@ Time spent: 13 hours spent in total
     ```
     lab<script>alert('xss')</script>
     ```
-  - Affected source code: 
+  - Affected source code: https://core.trac.wordpress.org/browser/tags/4.2/src/wp-admin/images
 ## 2. Stored XSS
   - Summary:
     The XSS script starts when the user clicks on the link in the comment box on the post.
     Tested in version: 4.2
-    Fixed in version:
+    Fixed in version: 5.2.3
   - GIF Walkthrough:
     <img src="xssVulnTwo.gif" alt="Stored XSS">
   - Steps to recreate:
@@ -36,7 +36,7 @@ Time spent: 13 hours spent in total
     ```
     <a onclick=alert('xss')>CLICK ME</a>
     ```
-  - Affected source code:
+  - Affected source code: https://core.trac.wordpress.org/browser/tags/4.2/src/wp-comments-post.php
 
 ## 3. CVE-2015-3440 
   - Summary:
@@ -56,4 +56,4 @@ Time spent: 13 hours spent in total
     print(output)
     ```
     3. Go to a post and paste the output as a comment.
-  - Affected source code:
+  - Affected source code: n/a
