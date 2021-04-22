@@ -28,9 +28,10 @@ to get a database query failed. This shows that the input is not sanitized and c
 
 <img src="blue-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Session Hijacking/Fixation
 
 Description:
+When we change the session id of an unlogged in page to a session id of a logged in page, the unlogged in page becomes the logged in page, which demonstrates a session hijack.
 
 <img src="blue-vuln2.gif">
 
@@ -46,9 +47,10 @@ Since the site does not sanitize their feedback input of any tags, we can abuse 
 
 <img src="green-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Username Enumeration
 
 Description:
+When we enter our username compared to a random username, we get different values for span class. When the username is correct we get, ```<span class="failure">Log in was unsuccessful.</span>```, and when the username is incorrect, we get ```<span class="failed">Log in was unsuccessful.</span>``` which would mean that we would have a metric in measuring whether our bruteforce on usernames is correct.
 
 <img src="green-vuln2.gif">
 
@@ -62,9 +64,10 @@ When we change the id tag in the URL to 10 or any other salespeople, we get the 
 
 <img src="red-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
 Description:
+Unlike other sites, when we change the CSRF token for the red site, the site allows it, which indicates the vulnerability for a CSRF attack. The blue site as demonstrated below generates an error page when we try to change the CSRF token when we are updating the user.
 
 <img src="red-vuln2.gif">
 
