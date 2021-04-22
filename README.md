@@ -79,6 +79,7 @@ Expanding on the usage of XSS from the green vulnerability, we can redirect the 
 ```
 into the feedback input box. 
 
+<img src="green-bonus2.gif">
 
 ## Notes
 
