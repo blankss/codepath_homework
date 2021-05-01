@@ -4,23 +4,28 @@
 
 **Objective:** Create a honeynet using MHN-Admin. Present your findings as if you were requested to give a brief report of the current state of Internet security. Assume that your audience is a current employer who is questioning why the company should allocate anymore resources to the IT security team.
 
-### MHN-Admin Deployment (Required)
+### MHN-Admin Deployment 
 
-**Summary:** I used GCP (Google Cloud Platform) as instructed in the module to deploy both the honeypot and the MHN-Admin as GCP has a free trial. 
+**Summary:** 
+I used GCP (Google Cloud Platform) as instructed in the module to deploy both the honeypot and the MHN-Admin as GCP has a free trial. By following the steps in the module, I was able to successful deploy MHN-Admin although the ./install.sh was rather lengthy. 
 
 <img src="mhn-admin.gif">
 
 ### Dionaea Honeypot Deployment
 
-**Summary:** As the name relates to the scientific name of the Venus Flytrap, Dionaea's intention is to attract targets that attack the honeypot to trap malware that exploits the vulnerabilities exposed by services offered by a network. The purpose of this is to get a sample of the malware to study off of.
+**Summary:** 
+As the name relates to the scientific name of the Venus Flytrap, Dionaea's intention is to attract targets that attack the honeypot to trap malware that exploits the vulnerabilities exposed by services offered by a network. The purpose of this is to get a sample of the malware to study off of.
 
 <img src="dionaea-honeypot.gif">
 
-### Database Backup (Required) 
+### Database Backup  
 
-**Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
-
-*Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
+**Summary:** 
+The exported JSON file records the number of attacks and any relative information regarding such as the timestamp, protocol, date, source IP, destination port, and the name of the honeypot. As stated in the command, 
+```
+mongoexport --db mnemosyne --collection session > session.json,  
+```
+MHN-Admin uses the RDBMS of mnemosyne. 
 
 ## Notes
 
