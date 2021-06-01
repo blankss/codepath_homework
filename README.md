@@ -1,4 +1,4 @@
-# codepath_homework
+# Cybersecurity Project Assignments
 
 See branches for completed assignments. 
 
